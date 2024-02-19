@@ -47,6 +47,12 @@ vim.g.maplocalleader = ' '
 -- modifications
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("t", '<Esc>', [[<C-\><C-n>]])
+vim.keymap.set("t", '<C-h>', [[<C-n><C-w>h]])
+vim.keymap.set("t", '<C-j>', [[<C-n><C-w>j]])
+vim.keymap.set("t", '<C-k>', [[<C-n><C-w>k]])
+vim.keymap.set("t", '<C-l>', [[<C-n><C-w>l]])
+
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    https://github.com/folke/lazy.nvim
 --    `:help lazy.nvim.txt` for more info
